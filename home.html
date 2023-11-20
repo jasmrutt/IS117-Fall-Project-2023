@@ -4,53 +4,69 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    </head>
+        <style>
+          /* Add this style to change the background color on hover */
+          .navbar-nav .nav-item:hover {
+            background-color: #343a40; /* Change this color to your desired hover color */
+          }
+        </style>
+      </head>
     <body>
-        
+        <!-- nav bar -->
         <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
-            <div class="container-fluid">
-                <!--insert a logo-->
-                <a class="navbar-brand" href="home.html">Portfolio</a> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>  
-                    </div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Projects</a>
-                    </div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+          <div class="container-fluid">
+              <!--insert a logo-->
+              <a class="navbar-brand" href="home.html">Portfolio</a> 
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                  aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarID">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="about.html">About</a>  
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Projects
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                              <a class="dropdown-item" href="work.html">Work</a>
+                              <a class="dropdown-item" href="activities.html">Activities</a>
+                              <a class="dropdown-item" href="education.html">Education</a>
+                              <!-- Add more dropdown items as needed -->
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
         <br>
         <center>
+
         <!-- carousel -->
-        <div id="slider1" class="carousel slide" data-ride="carousel">
+          <div id="slider1" class="carousel slide" data-ride="carousel" style="height: 600px; overflow: hidden;">
             <ol class="carousel-indicators">
               <li data-target="#slider1" data-slide-to="0" class="active"></li>
               <li data-target="#slider1" data-slide-to="1"></li>
               <li data-target="#slider1" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/grad.jpg" class="d-block w-50" alt="picture of Jasmin Rutter">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/cusa gbm.jpg" class="d-block w-50" alt="cusa gbm">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/soma ensembles.png" class="d-block w-50" alt="Soma ensembles">
-                </div>
+              <div class="carousel-item active">
+                  <img src="images/grad.jpg" class="d-block w-50" alt="picture of Jasmin Rutter">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/cusa gbm.jpg" class="d-block w-50" alt="cusa gbm">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/soma ensembles.png" class="d-block w-50" alt="Soma ensembles">
+              </div>
+          </div>
+              
             </div>
             <a class="carousel-control-prev" href="#slider1" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,37 +77,38 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          
           <br>
 
           <!-- Cards -->
           <div class="d-flex justify-content-around">
             <div class="card" style="width:18rem;">
-                <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                <img src="images/jasmin-in-backyard.JPG" class="card-img-top" alt="Picture of Jasmin">
                 <div class="card-body">
-                  <h5 class="card-title">About</h5>
-                  <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  b5
+                  <h5 class="card-title">About Me</h5>
+                  <h6 class="card-subtitle mb-2 text-muted ">Jasmin Rutter</h6>
+                  <p class="card-text">A summary of Jasmin Rutter's skills, passions and interests, personal traits, and achievements</p>
+                  
                 </div>
               </div>
     
               <div class="card" style="width:18rem;">
-                <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                <img src="images/Projects.png" class="card-img-top" alt="Projects">
                 <div class="card-body">
                   <h5 class="card-title">Projects</h5>
-                  <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  b5
+                  <h6 class="card-subtitle mb-2 text-muted ">Related Experience</h6>
+                  <p class="card-text">Descriptions of semester long projects in regards to app and web development.</p>
+                  
                 </div>
               </div>
     
               <div class="card" style="width:18rem;">
-                <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                <img src="images/Contact.png" class="card-img-top" alt="contact">
                 <div class="card-body">
                   <h5 class="card-title">Contact</h5>
-                  <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  b5
+                  <h6 class="card-subtitle mb-2 text-muted ">Get in Touch</h6>
+                  <p class="card-text">Please reach out to me if you have any questions.</p>
+                  
                 </div>
               </div>
           </div>
