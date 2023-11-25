@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Projects</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -11,13 +11,20 @@
             .navbar-nav .nav-item:hover {
               background-color: #343a40; 
             }
+        
+            /* Add this style to set a fixed height for the images */
+            .img-container img {
+            
+                object-fit: cover;
+            }
+            
           </style>
     </head>
     <body>
+        
         <!--navbar-->
         <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
             <div class="container-fluid">
-                <!--insert a logo-->
                 <a class="navbar-brand" href="home.html">Portfolio</a> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                     aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,8 +55,73 @@
             </div>
         </nav>
 
-        <center><header>Projects</header></center>
+        <center><header>Related Experience</header></center>
+
+        <!-- Fruit Stand Website-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" img-container>
+                    <img src="images/fruitstandHome1.jpg" height="95%" width="95%" alt="Fruit Stand">
+                    
+                </div>
+                
+                <br>
+
+                <div class="col-md-7">
+                    <h4>Internet Applications Semester Project</h4>
+                    <h5>Spring 2023</h5>
+                    <p>
+                        I developed a website to advertise a fruit stand using php, html, and css.
+                        My primary focus was on the navigation and architecture of information. I achieved this
+                        by creating multiple pages for various tasks. For example, the Home page gave a brief description
+                        of the fruit stand's origin and showed various fruits the company sold, there was also a shipping page
+                        so the user's knew whether or not the dimensions of their packages were ok, a page to add and delete products, and a page
+                        to look at a table of all the products details (i.e. fruit, color, description, price). The table about the fruit's details 
+                        was created through sql and performed data migration (i.e. importing new objects to the table, exporting information to be displayed
+                        on a website, deleting and adding objects in the table).
+                    </p>
+    
+                </div>
+            </div>
+    
+            <br>
+    
+            <!-- Watch App -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>Advanced Programming Semester Project</h4>
+                    <h5>Fall 2022</h5>
+                    <p>
+                        Donec in varius mauris. Donec a varius ex. In nulla nulla, venenatis eget lectus a, finibus elementum massa. 
+                        Phasellus congue eros augue, at dapibus justo auctor eget. Donec magna elit, gravida ac tellus sit amet, 
+                        interdum dapibus sem. Cras vitae diam accumsan, sollicitudin lectus consectetur, pellentesque justo. 
+                        Praesent dui risus, finibus eget condimentum sit amet, faucibus ut sapien. Duis egestas in mi a tincidunt. 
+                        Nulla nunc lectus, mollis vitae pulvinar eget, ornare ac justo. Ut a dignissim risus, pharetra lacinia libero. 
+                        Pellentesque facilisis nisl et molestie lobortis. Aliquam vitae molestie metus.
+
+                        <br>
+                        <br>
+
+                        Curabitur non facilisis ex. Suspendisse consequat sem sit amet feugiat iaculis. 
+                        Nullam mauris leo, congue a quam sed, lacinia hendrerit est. Vestibulum eu turpis velit. 
+                        Suspendisse iaculis dui quis tempor hendrerit. Fusce dolor nisl, sollicitudin et scelerisque 
+                        at, pellentesque ac arcu. Vivamus egestas elit lectus, in semper turpis fringilla a. 
+                        Nullam a commodo ex, a facilisis tellus. Donec pulvinar gravida ex, 
+                        quis pellentesque nibh porta eget.
+                    </p>
+                    
+                </div>
+                <div class="col-md-4" img-container>
+                    <img src="images/android studio project.png" width="310" height="479" alt="Android Studio Project">
+                    
+    
+                </div>
+            </div>
+        </div>>
     </body>
+
+    <br>
    
     <footer class="bg-light text-center h8 fixed-bottom">&copy 11/30/23 Jasmin Rutter Fall Project. All Rights Reserved.</footer>
     
