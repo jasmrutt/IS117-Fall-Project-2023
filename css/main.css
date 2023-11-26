@@ -1,11 +1,15 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.5rem;
+/* DEVELOPER: Jasmin Rutter, IS117-003, Fall 2023 */
+/* Add this style to change the background color on hover */
+.navbar-nav .nav-item:hover {
+    background-color: #343a40; 
+}
+
+  /* Sets a fixed height for the images */
+.img-container img {
+            
+   object-fit: cover;
+}
+
+body{
+    font-family: 'Playfair Display', sans;
 }
