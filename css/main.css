@@ -1,4 +1,10 @@
 /* DEVELOPER: Jasmin Rutter, IS117-003, Fall 2023 */
+
+/* hover-based dropdown */
+.navbar-nav .open:hover > .dropdown-menu {
+  display: block;
+}
+
 /* Add this style to change the background color on hover */
 .navbar-nav .nav-item:hover {
     background-color: #343a40; 
